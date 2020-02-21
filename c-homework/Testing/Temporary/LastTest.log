@@ -1,14 +1,14 @@
-Start testing: Feb 20 20:21 EST
+Start testing: Feb 21 05:13 EST
 ----------------------------------------------------------
 1/1 Testing: suite_1_test
 1/1 Test: suite_1_test
 Command: "/home/oldchicken/Desktop/c-homework/test/suite_1/suite_1_app"
 Directory: /home/oldchicken/Desktop/c-homework/test/suite_1
-"suite_1_test" start time: Feb 20 20:21 EST
+"suite_1_test" start time: Feb 21 05:13 EST
 Output:
 ----------------------------------------------------------
-test/suite_1/suite_1.c:77:test_open_1:PASS
-test/suite_1/suite_1.c:78:test_open_2:PASS
+test/suite_1/test_db.c:77:test_open_1:PASS
+test/suite_1/test_db.c:78:test_open_2:PASS
 wtfinside open loop, str:1
 key value stored: 1
 wtfinside open loop, str:3
@@ -17,25 +17,21 @@ wtfinside open loop, str:400
 key value stored: 400
 wtfinside open loop, str:4000
 key value stored: 4000
-inside insert, filename: new1.txt
 hash0: 1, hash1: 1, 2: 4000, 3: 3
 index: 1
 inside probe
 hash key is : 1
 ID already exists
-inside insert, filename: new1.txt
 hash0: 1, hash1: 1, 2: 4000, 3: 3
 index: 3
 inside probe
 hash key is : 3
 ID already exists
-inside insert, filename: new1.txt
 hash0: 1, hash1: 1, 2: 4000, 3: 3
 index: 0
 inside probe
 hash key is : 400
 ID already exists
-inside insert, filename: new1.txt
 hash0: 1, hash1: 1, 2: 4000, 3: 3
 index: 0
 inside probe
@@ -45,30 +41,24 @@ hash key is : 1
 inside probe
 hash key is : 4000
 ID already exists
-test/suite_1/suite_1.c:79:test_insert_1:PASS
-inside insert, filename: test.txt
+test/suite_1/test_db.c:79:test_insert_1:PASS
 hash0: -1, hash1: -1, 2: 4000, 3: 3
 index: 1
-inside insert, filename: test.txt
 hash0: -1, hash1: 1, 2: 4000, 3: 3
 index: 3
-inside insert, filename: test.txt
 hash0: -1, hash1: 1, 2: 4000, 3: 3
 index: 3
 inside probe
 hash key is : 3
 ID already exists
-inside insert, filename: test.txt
 hash0: -1, hash1: 1, 2: 4000, 3: 3
 index: 0
-inside insert, filename: test.txt
 hash0: 1, hash1: 1, 2: 4000, 3: 3
 index: 0
 inside probe
 hash key is : 400
 inside probe
 hash key is : 1
-inside insert, filename: test.txt
 hash0: 1, hash1: 1, 2: 4000, 3: 3
 index: 0
 inside probe
@@ -78,7 +68,7 @@ hash key is : 1
 inside probe
 hash key is : 4000
 ID already exists
-test/suite_1/suite_1.c:80:test_insert_2:PASS
+test/suite_1/test_db.c:80:test_insert_2:PASS
 wtfinside open loop, str:1
 key value stored: 1
 wtfinside open loop, str:3
@@ -87,7 +77,7 @@ wtfinside open loop, str:400
 key value stored: 400
 wtfinside open loop, str:4000
 key value stored: 4000
-test/suite_1/suite_1.c:81:test_find_1:PASS
+test/suite_1/test_db.c:81:test_find_1:PASS
 wtfinside open loop, str:1
 key value stored: 1
 wtfinside open loop, str:3
@@ -102,17 +92,17 @@ value 3 is stored at 3
 value 400 is stored at 0
 value 4000 is stored at 2
 value 4000 is stored at 2
-test/suite_1/suite_1.c:82:test_delete_1:PASS
+test/suite_1/test_db.c:82:test_delete_1:PASS
 
 -----------------------
 6 Tests 0 Failures 0 Ignored 
 OK
 <end of output>
-Test time =   0.01 sec
+Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"suite_1_test" end time: Feb 20 20:21 EST
+"suite_1_test" end time: Feb 21 05:13 EST
 "suite_1_test" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: Feb 20 20:21 EST
+End testing: Feb 21 05:13 EST

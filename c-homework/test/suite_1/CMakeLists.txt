@@ -1,5 +1,5 @@
 add_executable(suite_1_app
-    suite_1.c
+    test_db.c
 )
 
 target_link_libraries(suite_1_app
