@@ -10,7 +10,7 @@
 
 #define FILENAME_SIZE  50
 #define READ_SIZE      20
-#define HASHTABLE_SIZE 200
+#define HASHTABLE_SIZE 200 //can be changed to much larger
 #define INPUT_ID_BASE  10
 
 // a simple hash table for storing id
@@ -137,6 +137,7 @@ int db_delete(db_t* db, uint64_t id)
         fprintf(db->fp, "%ld\n", db->hashArray[i].key);
       }
     }
+    db->count--;
     fclose(db->fp);
     printf("ID is deleted\n");
     return 1;
