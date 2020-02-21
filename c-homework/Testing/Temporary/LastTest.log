@@ -1,98 +1,38 @@
-Start testing: Feb 21 05:13 EST
+Start testing: Feb 21 16:24 EST
 ----------------------------------------------------------
 1/1 Testing: suite_1_test
 1/1 Test: suite_1_test
 Command: "/home/oldchicken/Desktop/c-homework/test/suite_1/suite_1_app"
 Directory: /home/oldchicken/Desktop/c-homework/test/suite_1
-"suite_1_test" start time: Feb 21 05:13 EST
+"suite_1_test" start time: Feb 21 16:24 EST
 Output:
 ----------------------------------------------------------
-test/suite_1/test_db.c:77:test_open_1:PASS
-test/suite_1/test_db.c:78:test_open_2:PASS
-wtfinside open loop, str:1
-key value stored: 1
-wtfinside open loop, str:3
-key value stored: 3
-wtfinside open loop, str:400
-key value stored: 400
-wtfinside open loop, str:4000
-key value stored: 4000
-hash0: 1, hash1: 1, 2: 4000, 3: 3
-index: 1
-inside probe
-hash key is : 1
+test/suite_1/test_db.c:76:test_open_1:PASS
+No such file exist.
+test/suite_1/test_db.c:77:test_open_2:PASS
 ID already exists
-hash0: 1, hash1: 1, 2: 4000, 3: 3
-index: 3
-inside probe
-hash key is : 3
 ID already exists
-hash0: 1, hash1: 1, 2: 4000, 3: 3
-index: 0
-inside probe
-hash key is : 400
 ID already exists
-hash0: 1, hash1: 1, 2: 4000, 3: 3
-index: 0
-inside probe
-hash key is : 400
-inside probe
-hash key is : 1
-inside probe
-hash key is : 4000
 ID already exists
-test/suite_1/test_db.c:79:test_insert_1:PASS
-hash0: -1, hash1: -1, 2: 4000, 3: 3
-index: 1
-hash0: -1, hash1: 1, 2: 4000, 3: 3
-index: 3
-hash0: -1, hash1: 1, 2: 4000, 3: 3
-index: 3
-inside probe
-hash key is : 3
+test/suite_1/test_db.c:78:test_insert_1:PASS
+Insert successfully.
+Insert successfully.
 ID already exists
-hash0: -1, hash1: 1, 2: 4000, 3: 3
-index: 0
-hash0: 1, hash1: 1, 2: 4000, 3: 3
-index: 0
-inside probe
-hash key is : 400
-inside probe
-hash key is : 1
-hash0: 1, hash1: 1, 2: 4000, 3: 3
-index: 0
-inside probe
-hash key is : 400
-inside probe
-hash key is : 1
-inside probe
-hash key is : 4000
+Insert successfully.
+Insert successfully.
 ID already exists
-test/suite_1/test_db.c:80:test_insert_2:PASS
-wtfinside open loop, str:1
-key value stored: 1
-wtfinside open loop, str:3
-key value stored: 3
-wtfinside open loop, str:400
-key value stored: 400
-wtfinside open loop, str:4000
-key value stored: 4000
-test/suite_1/test_db.c:81:test_find_1:PASS
-wtfinside open loop, str:1
-key value stored: 1
-wtfinside open loop, str:3
-key value stored: 3
-wtfinside open loop, str:400
-key value stored: 400
-wtfinside open loop, str:4000
-key value stored: 4000
-value 400 is stored at 0
-value 4000 is stored at 2
-value 3 is stored at 3
-value 400 is stored at 0
-value 4000 is stored at 2
-value 4000 is stored at 2
-test/suite_1/test_db.c:82:test_delete_1:PASS
+test/suite_1/test_db.c:79:test_insert_2:PASS
+ID is found.
+ID is found.
+ID is found.
+ID is found.
+ID is not found in the database.
+test/suite_1/test_db.c:80:test_find_1:PASS
+ID is deleted
+ID is deleted
+ID is deleted
+ID is deleted
+test/suite_1/test_db.c:81:test_delete_1:PASS
 
 -----------------------
 6 Tests 0 Failures 0 Ignored 
@@ -101,8 +41,8 @@ OK
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"suite_1_test" end time: Feb 21 05:13 EST
+"suite_1_test" end time: Feb 21 16:24 EST
 "suite_1_test" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: Feb 21 05:13 EST
+End testing: Feb 21 16:24 EST

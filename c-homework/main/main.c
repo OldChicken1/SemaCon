@@ -11,6 +11,10 @@
 #define INSERT 0
 #define FIND 1
 #define DELETE 2
+#define TOKEN0 0
+#define TOKEN1 1
+#define TOKEN2 2
+#define TOKEN3 3
 
 int main()
 {
@@ -29,8 +33,8 @@ int main()
     int isError = 0;
     while (ptr != NULL)
     {
-      printf("'%s'\n", ptr);
-      if (counter == 0)
+      // printf("'%s'\n", ptr);
+      if (counter == TOKEN0)
       {
         if (strcmp(ptr, "dbcli") != 0)
         {
@@ -38,11 +42,11 @@ int main()
           isError = 1;
         }
       }
-      if (counter == 1)
+      if (counter == TOKEN1)
       {
         fileName = ptr;
       }
-      if (counter == 2)
+      if (counter == TOKEN2)
       {
         int i;
         for (i = 0; i < 3; i++)
@@ -58,7 +62,7 @@ int main()
           isError = 1;
         }
       }
-      if (counter == 3)
+      if (counter == TOKEN3)
       {
         char *endPtr;
         id = strtoull(ptr, &endPtr, BASE);
@@ -77,7 +81,7 @@ int main()
         break;
       }
     }
-    if (counter != 4)
+    if (!isError && counter != 4)
     {
       printf("Error: invalid command, 4 parameters are required to enter\n");
       continue;
